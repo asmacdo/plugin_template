@@ -2,8 +2,12 @@ Publish
 =======
 
 
-TODO Publication
-https://pulp.plan.io/issues/3298
+Publish tasks generate publications.  A publication contains metadata and artifacts associated
+with content contained within a RepositoryVersion.
+
+Using a :class:`~pulpcore.plugin.models.Publication` context manager is highly encouraged.  On
+context exit, the complete attribute is set True provided that an exception has not been raised.
+In the event an exception has been raised, the publication is deleted.
 
 One of the ways to perform publishing:
 

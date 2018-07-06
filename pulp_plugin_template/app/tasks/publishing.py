@@ -37,7 +37,6 @@ def publish(publisher_pk, repository_version_pk):
     with WorkingDirectory():
         with Publication.create(repository_version, publisher) as publication:
             # Write any Artifacts (files) to the file system and the database.
-            # each.
             # artifact = YourArtifactWriter.write(relative_path)
             # published_artifact = PublishedArtifact(
             #     relative_path=artifact.relative_path,
